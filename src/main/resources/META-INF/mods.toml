@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+ license="All rights reserved"
+[[mods]] 
+modId="jehvnar" 
+version="${file.jarVersion}"
+displayName="Jehvnar" 
+logoFile="examplemod.png" 
+credits="Made by some boys" 
+authors="Loaphs, Desert, Aliencv, Obsie, Oddball" 
+description='''
+Just some boys making a funny blacksmith/medieval mod thing
+'''
+[[dependencies.jehvnar]] 
+    modId="forge" 
+    mandatory=true
+    versionRange="[40,)" 
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.jehvnar]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"
