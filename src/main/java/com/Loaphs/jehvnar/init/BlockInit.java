@@ -21,10 +21,13 @@ public class BlockInit {
 	
 	public static final DeferredRegister<Item> ITEMS = ItemInit.ITEMS;
 	
+	//COPPER_ORE
 	public static final RegistryObject<Block> COPPER_ORE = register("copper_ore",
 			() -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_PURPLE)
 					.strength(3.0f).sound(SoundType.METAL).requiresCorrectToolForDrops()), 
 			object -> () -> new BlockItem(object.get(), new Item.Properties().tab(Jehvnar.JEHVNAR_TAB)));
+	
+	
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block) {
 		return BLOCKS.register(name, block);
