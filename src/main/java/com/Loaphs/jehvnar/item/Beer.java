@@ -5,6 +5,7 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.Level;
 
 public class Beer extends Item{
@@ -20,5 +21,10 @@ public class Beer extends Item{
 		}
 		
 		return super.use(world, player, hand);
+	}
+	
+	@Override
+	public int getBurnTime(ItemStack itemStack, RecipeType<?> recipeType) {
+		return 600;
 	}
 }

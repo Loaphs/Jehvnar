@@ -1,0 +1,20 @@
+{
+	"type": "crafting_shaped",
+	
+	"pattern": [
+		"IBI",
+		" I "
+	],
+	"key": {
+		"I": {
+			"tag": "minecraft:planks"
+		},
+		"B": {
+			"item": "minecraft:wheat_seeds"
+		}
+	},
+	"result": {
+		"item": "jehvnar:beer",
+		"count": 1
+	}
+}
